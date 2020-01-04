@@ -1,12 +1,13 @@
 import 'dart:convert';
 import 'dart:ui';
 
+import 'package:amin/driver/register_Driver.dart';
 import 'package:amin/pages/phone.dart';
 import 'package:amin/pages/splash.dart';
 import 'package:amin/utils/app_colors.dart';
 import 'package:flutter/material.dart';
 
-import 'main_page.dart';
+import '../driver/driver_main.dart';
 
 
 class VerifyScreen extends StatefulWidget {
@@ -222,7 +223,7 @@ class _VerifyScreenStste extends State<VerifyScreen> {
                                                               _d.text = value;
                                                               Navigator.of(context).pushReplacement(
                                                                 new MaterialPageRoute(
-                                                                  builder: (BuildContext context)=>new MyHomePage(),
+                                                                  builder: (BuildContext context)=>new RegisterDriver(),
                                                                 ),
                                                               );
 

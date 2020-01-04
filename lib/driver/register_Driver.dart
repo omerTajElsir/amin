@@ -1,5 +1,6 @@
 import 'dart:ui';
 
+import 'package:amin/driver/driver_main.dart';
 import 'package:amin/pages/phone.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
@@ -602,7 +603,11 @@ class _RegisterDriverState extends State<  RegisterDriver> {
                           style: new TextStyle(color: Colors.white,fontSize: 20,fontWeight: FontWeight.bold),
                         ),
                         onPressed: (){
-
+                          Navigator.of(context).push(
+                            new MaterialPageRoute(
+                              builder: (BuildContext context)=> DriverMain(),
+                            ),
+                          );
                         },
                         color: Colors.transparent,
                         elevation: 0,

@@ -1,19 +1,19 @@
-import 'package:amin/fragments/start_trip.dart';
-import 'package:amin/fragments/trip_details.dart';
+import 'package:amin/driver_fragments/start_trip.dart';
+import 'package:amin/driver_fragments/trip_details.dart';
 import 'package:amin/pages/phone.dart';
 import 'package:amin/utils/app_colors.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:amin/fragments/notifications.dart';
-import 'package:amin/fragments/car_details.dart';
-import 'package:amin/fragments/students.dart';
+import 'package:amin/driver_fragments/notifications.dart';
+import 'package:amin/driver_fragments/car_details.dart';
+import 'package:amin/driver_fragments/students.dart';
 
-class MyHomePage extends StatefulWidget {
+class DriverMain extends StatefulWidget {
   @override
-  _MyHomePageState createState() => _MyHomePageState();
+  _DriverMainState createState() => _DriverMainState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _DriverMainState extends State<DriverMain> {
 
   int currentTab = 1;
 
@@ -54,7 +54,7 @@ class _MyHomePageState extends State<MyHomePage> {
         elevation: 3,
         centerTitle: true,
         iconTheme: IconThemeData(color: Colors.black),
-        // Here we take the value from the MyHomePage object that was created by
+        // Here we take the value from the DriverMain object that was created by
         // the App.build method, and use it to set our appbar title.
         title: Text("Amin",style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold),),
       ),

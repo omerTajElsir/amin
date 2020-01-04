@@ -1,8 +1,10 @@
 import 'package:amin/pages/choose_type.dart';
-import 'package:amin/pages/main_page.dart';
+import 'package:amin/driver/driver_main.dart';
 import 'package:amin/pages/phone.dart';
 import 'package:amin/pages/splash.dart';
 import 'package:amin/pages/verify.dart';
+import 'package:amin/parent/parent_main.dart';
+import 'package:amin/parent/parent_register.dart';
 import 'package:flutter/material.dart';
 import 'driver/register_Driver.dart';
 
@@ -26,7 +28,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.deepPurple,
       ),
-      home: RegisterDriver(),
+      home: ParentMain(),
     );
   }
 }
